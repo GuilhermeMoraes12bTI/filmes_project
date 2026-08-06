@@ -1,0 +1,31 @@
+
+GET http://localhost:3000/filmes
+
+
+### 
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Vingadores: Ultimato",
+    "genre": "Ação",
+    "duration": 181,
+    "age_rating": 12
+}
+
+
+### 
+PUT http://localhost:3000/filmes/1
+Content-Type: application/json
+
+{
+    "title": "Vingadores: Ultimato (Edição Estendida)",
+    "genre": "Ação e Fantasia",
+    "duration": 190,
+    "age_rating": 14
+}
+
+
+### 
+DELETE http://localhost:3000/filmes/1
