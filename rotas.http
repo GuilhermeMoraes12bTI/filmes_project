@@ -7,11 +7,11 @@ POST http://localhost:3000/filmes
 Content-Type: application/json
 
 {
-    "id": 1,
-    "title": "Vingadores: Ultimato",
-    "genre": "Ação",
-    "duration": 181,
-    "age_rating": 12
+    "id": 13,
+    "title": "Homem-Aranha: Através do Aranhaverso",
+    "genre": "Animação",
+    "duration": 140 ,
+    "age_rating": 10
 }
 
 
