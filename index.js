@@ -21,7 +21,7 @@ app.get("/", (request, response) => {
 })
 
 app.post("/create", (request, response) => {
-    const { title, gender, ageLimit, duration } = request.body
+    const { title, genre, age_rating, duration } = request.body
 
     const insertCommand = "INSERT INTO filmes_guilhermemoraes(title, genre, age_rating, duration) VALUES (?, ?, ?, ?)"
 
