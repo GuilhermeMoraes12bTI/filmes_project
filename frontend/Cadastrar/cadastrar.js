@@ -11,8 +11,8 @@ async function cadastrarFilme() {
 
     const filme = {
         title: title.value,
-        gender: gender.value,
-        ageLimit: ageLimit.valueAsNumber,
+        genre: gender.value,
+        age_rating: ageLimit.valueAsNumber,
         duration: duration.valueAsNumber
     }
 
