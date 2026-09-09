@@ -1,10 +1,10 @@
 async function cadastrarFilme() {
     const title = document.getElementById("title")
     const gender = document.getElementById("gender")
-    const ageLimit = document.getElementById("ageLimit")
+    const age_rating = document.getElementById("age_rating")
     const duration = document.getElementById("duration")
 
-    if (title.value === "" || gender.value === "" || ageLimit.value === "" || duration.value === "") {
+    if (title.value === "" || gender.value === "" || age_rating.value === "" || duration.value === "") {
         alert("Preencha todos os campos!")
         return  
     }
@@ -12,7 +12,7 @@ async function cadastrarFilme() {
     const filme = {
         title: title.value,
         genre: gender.value,
-        age_rating: ageLimit.valueAsNumber,
+        age_rating: age_rating.valueAsNumber,
         duration: duration.valueAsNumber
     }
 

@@ -12,6 +12,8 @@ async function buscarFilmes() {
                         <p><strong>Gênero:</strong> ${filme.genre}</p>
                         <p><strong>Duração:</strong> ${filme.duration} minutos</p>
                         <p><strong>Classificação indicativa:</strong> ${filme.age_rating > 0 ? filme.age_rating + ' anos' : 'Livre'}</p>
+                        
+                        <button onclick="apagarFilme(${filme.id})">Apagar</button>
                     </div>
                 `
     })

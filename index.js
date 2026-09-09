@@ -40,7 +40,7 @@ app.post("/create", (request, response) => {
 app.delete("/delete/:id", (request, response) => {
     const { id } = request.params
 
-    const deleteCommand = "DELETE FROM correcao_MarcioMarcal WHERE id=?"
+    const deleteCommand = "DELETE FROM filmes_guilhermemoraes WHERE id=?"
 
     sql.query(deleteCommand, [id], (error) => {
         if (error) {
@@ -56,11 +56,11 @@ app.delete("/delete/:id", (request, response) => {
 
 app.put("/update/:id", (request, response) => {
     const { id } = request.params
-    const { title, gender, ageLimit, duration } = request.body
+    const { title, gender, age_rating, duration } = request.body
 
-    let updateCommand = "UPDATE correcao_MarcioMarcal SET title = ?, genre = ?, age_rating = ?, duration = ? WHERE id = ?"
+    let updateCommand = "UPDATE filmes_guilhermemoraes SET title = ?, genre = ?, age_rating = ?, duration = ? WHERE id = ?"
 
-    sql.query(updateCommand, [title, gender, ageLimit, duration, id], (error) => {
+    sql.query(updateCommand, [title, gender, age_rating, duration, id], (error) => {
         if (error) {
             console.log(error)
             return
